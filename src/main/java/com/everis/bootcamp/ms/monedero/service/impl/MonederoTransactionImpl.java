@@ -38,6 +38,8 @@ public class MonederoTransactionImpl implements MonederoTransactionService {
         return Mono.just(objectMapper.convertValue(monederoTransaction, MonederoTransactionDto.class));
     }
 
+
+
     @Override
     public MonederoTransactionDto getMonederoDto(MonederoTransaction monederoTransaction) {
         return objectMapper.convertValue(monederoTransaction, MonederoTransactionDto.class);
@@ -47,5 +49,4 @@ public class MonederoTransactionImpl implements MonederoTransactionService {
     public MonederoTransaction getMonedero(MonederoTransactionDto monederoTransactionDto) {
         return objectMapper.convertValue(monederoTransactionDto, MonederoTransaction.class);
     }
-
 }

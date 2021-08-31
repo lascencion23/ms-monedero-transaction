@@ -2,7 +2,6 @@ package com.everis.bootcamp.ms.monedero.configuration;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import com.everis.bootcamp.ms.monedero.domain.dto.MonederoTransactionDto;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

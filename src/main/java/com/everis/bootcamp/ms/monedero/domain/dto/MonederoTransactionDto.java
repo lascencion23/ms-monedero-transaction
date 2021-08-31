@@ -18,8 +18,6 @@ public class MonederoTransactionDto {
 
     private static final long serialVersionUID = 1L;
 
-    //private String id;
-
     private int originNumber;
 
     private int destinationNumber;

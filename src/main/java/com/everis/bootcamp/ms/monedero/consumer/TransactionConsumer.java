@@ -26,8 +26,7 @@ public class TransactionConsumer {
 			log.info("Consumer [{}]", monederoTransactionDto);
 			System.out.println("Consumer enviado");
 			MonederoTransaction mt = service.getMonedero(monederoTransactionDto);
-			service.create(mt).subscribe(c -> log.info(mt.toString()));
-			log.info("Debe guardar en bd");
+			service.create(mt).subscribe();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
